@@ -1,0 +1,26 @@
+.card {
+    border: 2px solid black;
+    object-fit: contain;
+    padding: 10%;
+    margin-top: 5%;
+    width: 100%;
+    height: 450px;
+    transition: all 0.75s;
+    cursor: pointer;
+    &:hover{
+        .content-back{
+            display: block;
+            transform: rotateY(180deg);
+        }
+        .content-front{
+            display: none;
+        }
+        transform: rotateY(180deg);
+    }
+}
+
+.content-back {
+    display: none;
+    object-fit: contain;
+}
+
